@@ -25,5 +25,10 @@ app.post("/", async (req, res) => {
         message: "Done signing up!"
     })
 })
-
+app.get('/all',(req,res)=>{
+    res.send('all')
+})
+app.get('/many',(req,res)=>{
+    res.send('many')
+})
 app.listen(3000);
